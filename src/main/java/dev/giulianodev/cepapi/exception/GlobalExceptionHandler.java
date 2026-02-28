@@ -1,6 +1,6 @@
 package dev.giulianodev.cepapi.exception;
 
-import dev.giulianodev.cepapi.dto.ApiErrorResponseDTO;
+import dev.giulianodev.cepapi.integration.brasilapi.dto.ApiErrorResponseDTO;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +39,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<ApiErrorResponseDTO> handleGeneric(Exception ex, HttpServletRequest req) {
+    public ResponseEntity<ApiErrorResponseDTO> handleGeneric(HttpServletRequest req) {
         return build(HttpStatus.INTERNAL_SERVER_ERROR, "Erro interno", req);
     }
 
