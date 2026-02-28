@@ -1,4 +1,4 @@
-package dev.giulianodev.cepapi.config;
+package dev.giulianodev.cepapi.integration.brasilapi.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

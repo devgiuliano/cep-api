@@ -1,6 +1,6 @@
-package dev.giulianodev.cepapi.client;
+package dev.giulianodev.cepapi.integration.brasilapi.client;
 
-import dev.giulianodev.cepapi.dto.BrasilApiCepResponseDTO;
+import dev.giulianodev.cepapi.integration.brasilapi.dto.BrasilApiCepResponseDTO;
 import dev.giulianodev.cepapi.exception.CepNaoEncontradoException;
 import dev.giulianodev.cepapi.exception.ServicoExternoException;
 import org.springframework.stereotype.Component;

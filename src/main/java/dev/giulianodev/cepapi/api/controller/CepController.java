@@ -1,7 +1,7 @@
-package dev.giulianodev.cepapi.controller;
+package dev.giulianodev.cepapi.api.controller;
 
-import dev.giulianodev.cepapi.dto.CepResponseDTO;
-import dev.giulianodev.cepapi.service.CepService;
+import dev.giulianodev.cepapi.api.dto.CepResponseDTO;
+import dev.giulianodev.cepapi.domain.CepService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +16,7 @@ public class CepController {
     public CepController(CepService cepService) {
         this.cepService = cepService;
     }
+
     @GetMapping("/{cep}")
     public ResponseEntity<CepResponseDTO> buscarCep(@PathVariable String cep) {
         CepResponseDTO response = cepService.buscarCep(cep);

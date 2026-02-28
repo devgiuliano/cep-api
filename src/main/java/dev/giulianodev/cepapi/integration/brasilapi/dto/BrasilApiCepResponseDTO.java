@@ -1,4 +1,4 @@
-package dev.giulianodev.cepapi.dto;
+package dev.giulianodev.cepapi.integration.brasilapi.dto;
 
 
 public record BrasilApiCepResponseDTO (

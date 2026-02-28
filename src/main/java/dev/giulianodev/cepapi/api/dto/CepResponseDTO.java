@@ -1,4 +1,4 @@
-package dev.giulianodev.cepapi.dto;
+package dev.giulianodev.cepapi.api.dto;
 
 public record CepResponseDTO (
      String cep,
